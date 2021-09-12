@@ -120,8 +120,8 @@ p6 <- df_auth |>
 
 # all plots together
 p7 <- (p2 + p1) / (p3 + p5)
-ggsave(file = "./figures/p1_meta_summary.pdf", plot = p7, width = 18, height = 16, units = "cm")
-ggsave(file = "./figures/p1_meta_summary.png", plot = p7, width = 18, height = 16, units = "cm", dpi = 300)
+ggsave(file = "./figures/p1_meta_summary.pdf", plot = p7, width = 22, height = 16, units = "cm")
+ggsave(file = "./figures/p1_meta_summary.png", plot = p7, width = 22, height = 16, units = "cm", dpi = 300)
 
 
 # most pubs and citations
@@ -129,7 +129,6 @@ p8 <- p4 / p6 +
   plot_layout(heights = c(2, 1.2))
 ggsave(file = "./figures/p2_cites_and_papers.pdf", plot = p8, width = 18, height = 22, units = "cm")
 ggsave(file = "./figures/p2_cites_and_papers.png", plot = p8, width = 18, height = 22, units = "cm", dpi = 300)
-
 
 
 
